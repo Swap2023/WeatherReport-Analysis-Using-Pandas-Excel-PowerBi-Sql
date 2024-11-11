@@ -58,6 +58,17 @@ FROM
 GROUP BY 
     `Weather Condition`;
 #all the Records where Weather Condition is Fog
-select count(*) from weather.`1. weather data`
-where `Weather Condition` = 'Fog';
+SELECT COUNT(*)
+FROM weather.`1. weather data`
+WHERE `Weather Condition` = 'Fog';
+
+#all instances when 'Weather is Clear' or 'Visibility is above 40'. 
+select count(*)
+from weather.`1. weather data`
+where `Weather Condition` = 'Clear' or Visibility_km>40;
+ 
+ #15) Find all instances when: A. 'Weather is Clear' and 'Relative Humidity is greater than 50' or B. 'Visibility is above 40'
+select count(*)
+from weather.`1. weather data`
+where `Weather Condition` = 'Clear' and `Rel Hum_%`>50 or Visibility_km>40; 
    
