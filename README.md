@@ -1,4 +1,4 @@
-# WeatherReport Analytical Skills using Pandas,Excel,PowerBi,Sql
+# WeatherReport Analytical Skills using Pandas,Excel,PowerBi,SQL
 
 # Weather Data Analysis Skills
 
